@@ -33,9 +33,7 @@ struct foo
     // NOTE(casey): These is intentionally no MEMBER9, so that there is a "no additional member" iteration
 };
 
-int main(void)
+extern "C" void WinMainCRTStartup()
 {
     foo Foo = {};
-
-    return 0;
 }

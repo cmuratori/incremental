@@ -3,7 +3,7 @@
 if not exist build mkdir build
 pushd build
 
-set flags=-Zi -nologo -Gm- ..\incremental.cpp /link -INCREMENTAL:NO
+set flags=-Zi -GS- -nologo -Gm- ..\incremental.cpp /link -INCREMENTAL:NO -SUBSYSTEM:WINDOWS
 
 if exist incremental.pdb del incremental.pdb
 if exist vc140.pdb del vc140.pdb
