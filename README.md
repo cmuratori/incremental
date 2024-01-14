@@ -1,2 +1,3 @@
-# incremental
-The executable may not be incrementally linked, but the PDB sure seems to be?
+# Unbounded PDB growth demonstration
+Reproduces the "infinitely growing" PDB behavior of Microsoft's linker as of January 14th, 2024.
+See https://computerenhance.com for details.
